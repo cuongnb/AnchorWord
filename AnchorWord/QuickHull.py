@@ -4,20 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-from sklearn import decomposition
-from sklearn.manifold import TSNE
 
-# data = [[-0.5, -0.5], [-0.5, 0.5], [0.5, -0.5], [0, 0], [0.3, 0.25]]
-# tnse = TSNE(n_components=2)
-# a1 = tnse.fit_transform(a)
-# print "TNSE"
-# print a1
-# print '\n'
-#
-# pca = decomposition.PCA(n_components=2)
-# a2 = pca.fit_transform(a)
-# print "PCA"
-# print a2
 
 size = 200
 x_axis = np.random.rand(size)

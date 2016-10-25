@@ -3,7 +3,7 @@ import numpy as np
 # Read data
 data = []
 nDoc = 0
-with open("/home/cuong/PycharmProjects/AnchorWord/Data/tiny.anchor") as f:
+with open("/home/cuongtt/PycharmProjects/AnchorWord/Data/test.anchor") as f:
     for line in f:
         words = line.strip().split()
         if len(words) == 1:
