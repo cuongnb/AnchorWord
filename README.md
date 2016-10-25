@@ -1,4 +1,4 @@
-Requirement
+* Requirement
     - numpy
     - pyhull
     - matplotlib
