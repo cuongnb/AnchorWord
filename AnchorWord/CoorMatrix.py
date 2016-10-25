@@ -14,6 +14,7 @@ print "Data: "
 for item in data:
     print item
 
+
 # Build dictionary
 wordID = dict()
 rwordID = dict()
