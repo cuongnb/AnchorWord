@@ -115,6 +115,7 @@ def main():
     # for item in anchor:
     #     print item
 
+    # Plot the data
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     for i in range(len(new_data)):
@@ -123,6 +124,7 @@ def main():
         if list(item) in anchor:
             ax.text(item[0], item[1], item[2],  '%s' % (idword[i]), size=20, zorder=1, color='k')
 
+    # Plot convex hull of data
     for item in hull:
         if [item[0][0], item[0][1], item[0][2]] not in anchor:
             anchor.append([item[0][0], item[0][1], item[0][2]])
@@ -133,7 +135,6 @@ def main():
         ax.plot([item[0][0], item[1][0]], [item[0][1], item[1][1]], [item[0][2], item[1][2]], color='b')
         ax.plot([item[1][0], item[2][0]], [item[1][1], item[2][1]], [item[1][2], item[2][2]], color='b')
         ax.plot([item[2][0], item[0][0]], [item[2][1], item[0][1]], [item[2][2], item[0][2]], color='b')
-    # plt.legend()
     plt.show()
     print 'Number of anchor word: ' + str(len(anchor))
 
